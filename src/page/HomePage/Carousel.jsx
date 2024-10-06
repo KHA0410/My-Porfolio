@@ -16,8 +16,8 @@ export default function Carousel() {
             />
           </div>
 
-          <div className="text-2xl font-bold text-center text-white  animate__animated animate__backInUp">
-            <h1 className="text-3">Hello, I'm Nguyen Kha</h1>
+          <div className="text-2xl font-bold text-center text-white animate__animated animate__backInUp">
+            <h1 className="text-3">Hello, I'm Kha Nguyen</h1>
             <h2>A Front-End Developer</h2>
           </div>
         </div>

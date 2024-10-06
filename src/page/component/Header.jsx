@@ -7,7 +7,7 @@ export default function Header() {
     <div className="text-xl text-white bg-black shadow-lg nt-medium header_fixed shadow-blue-500">
       <div className="container flex items-center justify-between h-20">
         <div>
-          <h1 className="text-3xl font-bold">NguyenKha</h1>
+          <h1 className="text-3xl font-bold">KhaNguyen</h1>
         </div>
         <nav className="space-x-5">
           <a href="#">Home</a>

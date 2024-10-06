@@ -2,6 +2,7 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
+import { Tooltip } from "antd";
 
 export default function Skill() {
     AOS.init();
@@ -27,11 +28,14 @@ export default function Skill() {
                     return (
                       <div key={index} className="inline-flex ">
                         <div className="px-3">
-                        <img
+                          <Tooltip overlayClassName="custom-tooltip" placement="bottom" title={skill.name} color="white">
+                               <img
                           className="w-20 h-20 p-2 my-3 bg-white rounded-xl"
                           src={skill.img}
                           alt=""
                         />
+                          </Tooltip>
+                     
                         </div>
                       </div>
                     );
