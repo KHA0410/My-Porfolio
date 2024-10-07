@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="py-5 text-white bg-black">
       <div className="container">
             <h1 className="text-3xl font-bold">KhaNguyen</h1>
-        <div className="justify-around py-3 text-xl sm:space-y-3 md:space-y-0 md:flex">
+        <div className="justify-around py-3 text-xl sm:space-y-5 md:space-y-0 md:flex">
           <div className="flex-1">
             <div className="flex items-center space-x-3">
               <i class="fa fa-envelope w-4"></i>
@@ -17,10 +17,10 @@ export default function Footer() {
             </div>
           </div>
           <div className="flex-1 space-x-3">
-            <a href="">
+            <a href="https://www.facebook.com/profile.php?id=100074997498660">
               <i class="fab fa-facebook icon_connect"></i>
             </a>
-            <a href="">
+            <a href="https://github.com/KHA0410">
               <i class="fab fa-github icon_connect"></i>
             </a>
             <a href="">

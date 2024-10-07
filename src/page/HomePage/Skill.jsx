@@ -7,11 +7,10 @@ import { Tooltip } from "antd";
 export default function Skill() {
     AOS.init();
   let { tech_arr } = useSelector((state) => state.technicalSlice);
-  console.log("tech_arr", tech_arr);
   return (
     <div className="pb-5 bg-blue-950">
       <div className="container space-y-5 text-white">
-        <h1 className="py-5 text-xl font-medium text-gray-500">
+        <h1 className="pt-5 text-xl font-medium text-gray-500">
           TECHNICAL SKILLS
         </h1>
         <div>
