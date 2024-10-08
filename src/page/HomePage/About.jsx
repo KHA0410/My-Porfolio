@@ -6,11 +6,11 @@ export default function () {
     AOS.init();
 
   return (
-    <div className="py-5 bg-blue-950">
-      <div className="container space-y-5 text-white">
-        <h1 className="text-xl font-medium text-gray-500">INTRODUCTION</h1>
-        <div data-aos="fade-right" className="space-y-3 text-xl">
-          <h1 className="text-3xl font-bold ">OVERVIEW</h1>
+    <div className="bg-blue-950">
+      <div className="container py-5 text-white">
+        <h1 className="pb-3 text-xl font-medium text-gray-500">INTRODUCTION</h1>
+        <div data-aos="fade-right" className="text-xl">
+          <h1 className="text-3xl font-bold">OVERVIEW</h1>
           <p>
             I am a graduation student majorinig in electronics and
             telecommunications at Saigon University, with knowledge and skills
