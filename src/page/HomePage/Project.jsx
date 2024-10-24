@@ -17,13 +17,21 @@ export default function Project() {
         <div className="grid gap-5 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {project_arr.map((item, index) => {
             return (
-              <NavLink to={`/detail/${item.code}`} data-aos="fade-right" key={index} className="space-y-3 project_item">
-                <img className="object-cover rounded-md h-46" src={item.img} alt="" />
+              <div data-aos="fade-right" key={index} className="space-y-3 project_item">
+                <a href={item.link_deloy}>
+                  <img className="object-cover h-48 rounded-md" src={item.img} alt="" />
+                <div className="flex justify-between pt-2 ">
                 <h3 className="text-xl font-medium">{item.name}</h3>
+                <a className="text-2xl" href={item.link_git}>
+              <i class="fab fa-github"></i>
+            </a>
+                </div>
                 <Tooltip title={item.desc}> 
                 <p style={{width: 200}}  className="text-gray-400 truncate">{item.desc}</p>
                 </Tooltip>
-              </NavLink>
+                </a>
+                
+              </div>
             );
           })}
         </div>
