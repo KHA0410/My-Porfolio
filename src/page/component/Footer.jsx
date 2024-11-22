@@ -23,7 +23,7 @@ export default function Footer() {
             <a href="https://github.com/KHA0410">
               <i class="fab fa-github icon_connect"></i>
             </a>
-            <a href="https://drive.google.com/file/d/1VzYYvzPsMIv0umoQlyv6m-C65NGc2HgH/view?usp=sharing">
+            <a href="https://drive.google.com/file/d/1l8a7JBAm1RXajITZ8z9Od6LlCDojD2_I/view?usp=sharing">
               <i class="fa fa-address-card icon_connect"></i>
             </a>
             <a className="w-20" href="">
