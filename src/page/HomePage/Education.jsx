@@ -17,16 +17,12 @@ export default function Education() {
         <div className="md:space-x-5 md:flex justify-evenly">
           {edu_arr.map((item, index) => {
             return (
-              <Tooltip
-                overlayClassName="custom-tooltip"
-                placement="bottom"
-                title={"Click to view certificate"}
-                color="rgba(255, 255, 255, 0.5)"
+              <div
                 key={index}
                 data-aos="fade-right"
                 className="space-y-3 cursor-pointer bg_blur"
+                
               >
-                <a href="https://drive.google.com/drive/folders/1CaZB8wHHMs5MMU2ENvFsadvitIbnILZS?usp=sharing">
                 <h1 className="text-3xl font-bold ">{item.type}</h1>
                 <h2 className="text-xl font-medium">{item.location}</h2>
 
@@ -40,8 +36,7 @@ export default function Education() {
                     </div>
                   );
                 })}
-                </a>
-              </Tooltip>
+              </div>
             );
           })}
         </div>
