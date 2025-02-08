@@ -2,6 +2,7 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useSelector } from "react-redux";
+import { Tooltip } from "antd";
 
 export default function Education() {
   AOS.init();
@@ -16,11 +17,16 @@ export default function Education() {
         <div className="md:space-x-5 md:flex justify-evenly">
           {edu_arr.map((item, index) => {
             return (
-              <div
+              <Tooltip
+                overlayClassName="custom-tooltip"
+                placement="bottom"
+                title={"Click to view certificate"}
+                color="rgba(255, 255, 255, 0.5)"
                 key={index}
                 data-aos="fade-right"
-                className="space-y-3 bg_blur"
+                className="space-y-3 cursor-pointer bg_blur"
               >
+                <a href="https://drive.google.com/drive/folders/1CaZB8wHHMs5MMU2ENvFsadvitIbnILZS?usp=sharing">
                 <h1 className="text-3xl font-bold ">{item.type}</h1>
                 <h2 className="text-xl font-medium">{item.location}</h2>
 
@@ -34,7 +40,8 @@ export default function Education() {
                     </div>
                   );
                 })}
-              </div>
+                </a>
+              </Tooltip>
             );
           })}
         </div>
